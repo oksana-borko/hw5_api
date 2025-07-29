@@ -1,1 +1,7 @@
-[{"date":"2025-07-25T14:34:48.771Z","message":"Data was restored from file"},{"date":"2025-07-25T14:35:26.159Z","message":"User with id 112 was added"},{"date":"2025-07-25T14:35:34.156Z","message":"Data was saved to file"},{"date":"2025-07-25T14:35:34.157Z","message":"Server shutdown by Ctrl+C"}]
+[{"date":"2025-07-25T14:34:48.771Z","message":"Data was restored from file"},{"date":"2025-07-25T14:35:26.159Z","message":"User with id 112 was added"},{"date":"2025-07-25T14:35:34.156Z","message":"Data was saved to file"},{"date":"2025-07-25T14:35:34.157Z","message":"Server shutdown by Ctrl+C"}]{"date":"2025-07-29T07:57:53.557Z","message":"Data was restored from file"}
+{"date":"2025-07-29T08:04:44.442Z","message":"Data was saved to file"}
+{"date":"2025-07-29T08:04:44.444Z","message":"Server shutdown by Ctrl+C"}
+{"date":"2025-07-29T08:04:50.139Z","message":"Data was restored from file"}
+{"date":"2025-07-29T08:05:24.831Z","message":"Data was saved to file"}
+{"date":"2025-07-29T08:05:24.834Z","message":"Server shutdown by Ctrl+C"}
+{"date":"2025-07-29T08:05:29.072Z","message":"Data was restored from file"}
