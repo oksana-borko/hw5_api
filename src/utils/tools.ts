@@ -1,29 +1,33 @@
-import {IncomingMessage} from "node:http";
+import { IncomingMessage } from "node:http";
 
-export const sayHi = (name:string):void => {
-    console.log(`Hello ${name}`)
-}
-export async function parseBody(req: IncomingMessage) {
+export const sayHi = (name: string): void => {
+    console.log(`Hello ${name}`);
+};
+
+export async function parseBody(req: IncomingMessage): Promise<any> {
     return new Promise((resolve, reject) => {
         let body = "";
-        req.on('data', (chunk) => {
+        req.on("data", (chunk) => {
             body += chunk.toString();
-        })
-        req.on('end', () => {
+        });
+        req.on("end", () => {
             try {
-                resolve(JSON.parse(body))
+                resolve(JSON.parse(body));
             } catch (e) {
-                reject(new Error('Invalid json'))
+                reject(new Error("Invalid JSON"));
             }
-        })
-    })
+        });
+        req.on("error", (err) => reject(err));
+    });
 }
 
-export const isUserType = (obj:any):boolean => {
+export const isUserType = (obj: any): boolean => {
     return (
-        typeof obj === 'object' &&
+        typeof obj === "object" &&
         obj !== null &&
-        typeof obj.id === 'number' &&
-        typeof obj.userName === 'string'
+        typeof obj.id === "number" &&
+        obj.id > 0 &&
+        typeof obj.userName === "string" &&
+        obj.userName.trim().length > 0
     );
-}
+};
